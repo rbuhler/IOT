@@ -1,0 +1,27 @@
+AT                 -> Testar a ligação
+AT+VERSION -> Para sabermos a versão do módulo
+AT+ROLE=1 -> Configurar o módulo como MASTER (0 é Slave)
+AT+CMODE=0 -> Para estabelecer ligação com o último dispositivo (automaticamente)
+AT+INIT       -> Inicializar
+AT+INQ        -> Pesquisar outros equipamentos bluetooth
+AT+INQC      -> Terminar a pesquisa
+AT+RNAME   -> Perguntar o nome de um determinado equipamento bluetooth (através do seu endereço)
+AT+FSAD      -> Pesquisar o referido equipamento na lista de autenticação de módulos já autenticados anteriormente (se existir)
+AT+BIND      -> Para vincular um equipamento ao módulo HC-05
+AT+PAIR       -> Efectuar o emparelhamento com o equipamento pretendido
+AT+LINK       -> Estabelecer ligação
+
+
++INQ:8818:56:6898EB,1F00,FFC1OBDII
+
+Load sketch (Master5);
+Disconect Arduino;
+Connect the bluetooth;
+Turn Arduino on;
+Open Serial Monitor;
+
+
+NetWeaver Cloud
+Step by step: http://scn.sap.com/docs/DOC-28197
+
+4-5 julho
