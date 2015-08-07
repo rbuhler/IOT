@@ -10,7 +10,6 @@ void setup(){
 void loop(){
   
   get_gps();
-  
 }
   void get_gps(){
     while(Serial.available())
@@ -19,10 +18,11 @@ void loop(){
       temp = Serial.read();
     
       if(count >= rounds && temp == '$'){
+          
           Serial.println(dataString);  
           dataString = "";      
          count = 0;
       }
-      dataString += String(temp);
+         dataString += String(temp); 
     }    
   }
